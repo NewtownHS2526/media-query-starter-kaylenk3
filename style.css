@@ -16,8 +16,56 @@ html {
     height: 200px;
     padding: 10px;
   }
+  /*this is for the independence practice part -kay*/
+  @media (min-width:390px)  {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 5px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+  }
   
+  .box {
+    border: 2px solid yellowgreen;
+    height: 300px;
+    padding: 15px;
+  }
+}
   /* CODE ALONG: Write a media query to change the styling on screens that have a min-width of 768px that changes the grid to three columns and changes the color of the border*/
+  @media (min-width:768px){
+    .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 5px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: start;
+    }
+    .box {
+    border: 2px solid blue;
+    height: 200px;
+    padding: 10px;
+    }
+  }
   
   
   /* INDEPENDENT PRACTICE: Write a media query to change the styling on screens that have a min-width of 390 that changes the grid to two columns, reduces the box height to 100px, reduces padding to 5px, and reduces the border weight to 1px */
+
+@media (min-width: 970px) {
+   .container {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 20px 5px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: end;
+  }
+  
+  .box {
+    border: 2px solid yellow;
+    height: 100px;
+    padding: 5px;
+  }
+}
